@@ -4,6 +4,7 @@
 Welcome to my repository containing my solutions for the [Advent of Code 2023](https://adventofcode.com/2023). Advent of Code is an annual set of programming puzzles that can be solved in any programming language. This repository documents my journey through these challenges.
 
 ## Project Structure
+Each day will have its own folder, named `day1`, `day2`, etc.
 Each day's challenge is solved in a separate Python script named `problem1.py`, `problem2.py`, etc., corresponding to the problem number.
 
 ## Getting Started
