@@ -16,7 +16,10 @@ To run these scripts, you will need Python installed on your machine.
 ### Prerequisites
 
 - Python 3.10 or above
-- Any additional libraries (if used) are listed in `requirements.txt`
+- Any additional libraries (if used) can be installes with
+conda env create -f environment.yml
+conda activate torch-latest
+pip install -m `requirements.txt`
 
 ### Installation
 
