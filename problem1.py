@@ -1,3 +1,6 @@
+# Advent of Code 2023 - Day 1
+# Problem 1
+
 import os
 
 data = {}
