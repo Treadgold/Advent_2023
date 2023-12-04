@@ -152,4 +152,3 @@ dependencies:
       - transformers==4.35.0
       - wave==0.0.2
       - zipp==3.17.0
-prefix: C:\Users\Michael\anaconda3\envs\torch-latest
