@@ -28,28 +28,26 @@ def find_numbers(line: str) -> list:
             pos = line.find(target, pos + 1)
     return sorted(positions, key=lambda x: x[1])  # Sort by position
 
-def match_int(text: str) -> int:
-    # all this does is convert the text to an integer
-    if text == 'one' or text == '1':
-        return 1
-    elif text == 'two' or text == '2':
-        return 2
-    elif text == 'three' or text == '3':
-        return 3
-    elif text == 'four' or text == '4':
-        return 4
-    elif text == 'five' or text == '5':
-        return 5
-    elif text == 'six' or text == '6':
-        return 6
-    elif text == 'seven' or text == '7':
-        return 7
-    elif text == 'eight' or text == '8':
-        return 8
-    elif text == 'nine' or text == '9':
-        return 9
-    else:
-        return None
+def match_int(text: str or int) -> int:
+    # Check if input is already an integer
+    if isinstance(text, int):
+        return text
+
+    # Mapping of text to integers
+    text_to_int = {
+        'one': 1, '1': 1,
+        'two': 2, '2': 2,
+        'three': 3, '3': 3,
+        'four': 4, '4': 4,
+        'five': 5, '5': 5,
+        'six': 6, '6': 6,
+        'seven': 7, '7': 7,
+        'eight': 8, '8': 8,
+        'nine': 9, '9': 9
+    }
+
+    # Return the corresponding integer, or None if not found
+    return text_to_int.get(text)
 
 def collect_numbers(data: dict) -> list:
     # this function goes through each line in the input data dictionary
