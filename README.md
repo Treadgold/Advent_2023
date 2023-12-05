@@ -15,11 +15,8 @@ To run these scripts, you will need Python installed on your machine.
 
 ### Prerequisites
 
-- Python 3.10 or above
-- Any additional libraries (if used) can be installes with
-conda env create -f environment.yml
-conda activate torch-latest
-pip install -m `requirements.txt`
+- Python 3.10 or above  
+- Any additional libraries (if used) can be installes with instructions below
 
 ### Installation
 
@@ -27,3 +24,6 @@ pip install -m `requirements.txt`
 
    ```bash
    git clone https://github.com/Treadgold/Advent_2023.git
+   conda env create -f environment.yml  
+   conda activate torch-latest  
+   pip install -m `requirements.txt` 
