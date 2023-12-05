@@ -24,6 +24,7 @@ To run these scripts, you will need Python installed on your machine.
 
    ```bash
    git clone https://github.com/Treadgold/Advent_2023.git
+   cd Advent_2023
    conda env create -f environment.yml  
    conda activate torch-latest  
-   pip install -m `requirements.txt` 
+   
