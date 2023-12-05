@@ -20,8 +20,7 @@ def read_data(file_path: str) -> torch.Tensor:
 
     # Initialize a 140x140 tensor to store characters
     tensor = torch.zeros((140, 140), dtype=torch.int8)
-    # move the tensor to the gpu
-    # tensor = tensor.cuda()
+    
     for i, line in enumerate(lines):
         for j, char in enumerate(line.strip()):
             tensor[i][j] = ord(char)
@@ -111,4 +110,11 @@ valid_numbers, not_valid = find_valid_numbers(tensor)
 final = 0
 for val in valid_numbers:
     final += val
-print(final)
+
+
+print(f"There are {len(not_valid)} numbers that are not valid part numbers.")
+print(f"However, ")
+print(f"There are {len(valid_numbers)} part numbers that ARE valid!")
+_test = str(valid_numbers[:10])[:-1] + " ... " + str(valid_numbers[-10:])[1:]
+print(_test)
+print(f"The sum of all valid part numbers is {final}.")
