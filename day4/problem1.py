@@ -10,7 +10,11 @@ for line in lines:
     card_winning = sections[1].split('|')[0].split()
     card_drawn = sections[1].split('|')[1].split()
     cards.append((card_number, card_winning, card_drawn))
+
+
+
 total = 0
+
 for card in cards:
     matches = 0
     for number in card[2]:
